@@ -1,0 +1,16 @@
+diff -up jimtcl-0.83/Makefile.in.omv~ jimtcl-0.83/Makefile.in
+--- jimtcl-0.83/Makefile.in.omv~	2025-03-01 16:48:34.722803161 +0100
++++ jimtcl-0.83/Makefile.in	2025-03-01 16:50:32.336896485 +0100
+@@ -46,9 +46,9 @@ AS_CFLAGS = -I@srcdir@
+ AS_CXXFLAGS = -I@srcdir@
+ @endif
+ 
+-AS_CFLAGS += @AS_CFLAGS@
+-AS_CXXFLAGS += @AS_CFLAGS@
+-AS_CPPFLAGS += @AS_CPPFLAGS@
++AS_CFLAGS += @AS_CFLAGS@ -I/usr/include/hiredis
++AS_CXXFLAGS += @AS_CFLAGS@ -I/usr/include/hiredis
++AS_CPPFLAGS += @AS_CPPFLAGS@ -I/usr/include/hiredis
+ CFLAGS ?= @CFLAGS@
+ CXXFLAGS ?= @CXXFLAGS@
+ LDFLAGS = @LDFLAGS@
