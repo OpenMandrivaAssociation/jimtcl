@@ -2,7 +2,7 @@
 
 Name:           jimtcl
 Version:        0.83
-Release:        1
+Release:        2
 Summary:        A small embeddable Tcl interpreter
 
 License:        BSD-2-Clause-Views
