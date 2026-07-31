@@ -1,8 +1,8 @@
 %bcond_without tests
 
 Name:           jimtcl
-Version:        0.83
-Release:        2
+Version:        0.84
+Release:        1
 Summary:        A small embeddable Tcl interpreter
 
 License:        BSD-2-Clause-Views
@@ -25,7 +25,7 @@ BuildRequires:  hostname
 
 %patchlist
 # readline expects applications to include stdio.h, jimtcl was not
-https://github.com/msteveb/jimtcl/commit/35e0e1f9b1f018666e5170a35366c5fc3b97309c.patch
+# dropped (no longer applies): https://github.com/msteveb/jimtcl/commit/35e0e1f9b1f018666e5170a35366c5fc3b97309c.patch
 jimtcl-find-hiredis.patch
 
 %description
